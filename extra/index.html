@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #eee;
+        width: 500px;
+        height: 400px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    input{
+        width: 80%;
+        padding: 10px 30px;
+        margin: 10px;
+    }
+ul li{
+    text-decoration: none;
+    list-style: none;
+}
+.btn{
+    background: yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error{
+    background: red;
+    color: #fff;
+}
+    
+</style>
+
+<body>
+    <div class="container">
+        <h1>MY FORM DATA</h1>
+        <p id="error"></p>
+        <form action="" id="my-form">
+            <label for="username">NAME</label>
+            <input type="text" id="username"  placeholder="John" />
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" placeholder="xyz@mail.com" /><input type="submit" class="btn" id=""btn />
+        </form>
+         <ul id="data" >
+            <!-- <li>Data</li> -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
