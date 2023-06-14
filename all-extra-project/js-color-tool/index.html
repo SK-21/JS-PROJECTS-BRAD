@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS-color-tool</title>
-</head>
-<body>
-    
-
-
-    
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Color Lighten/Darken</h1>
+      <label for="hex">Color (Hex)</label>
+      <input type="text" name="hex" id="hexInput" placeholder="#000000"/>
+      <label for="slider">0%</label>
+      <input type="range" min="0%" max="100" value="0" name="slider" class="slider" id="slider"/>
+      <p>Input Color</p>
+      <div id="inputcolor" class="box"></div>
+      <p>Altered Color</p>
+      <div id="alteredcolor" class="box"></div>
+    </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
